@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>返回顶部</title>
+
+    <style>
+        .hide{
+            display: none;
+        }
+        .back{
+            position: fixed;
+            right: 80px;
+            bottom: 90px;
+            width: 50px;
+        }
+        .gotop{
+            position: relative;
+            width: 48px;
+            height: 38px;
+            border: 1px solid #ccd3e4;
+            color: #fff;
+            text-align: center;
+        }
+        .gotop .icon{
+            margin-top: 10px;
+        }
+        .gotop:hover:after {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: " ";
+            position: absolute;
+            background-color: #3b5998;
+        }
+        .icon{
+            background: url(/static/bootstrap/img/gotop.png) no-repeat;
+            background-position: -180px 19px;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .content {
+            visibility: hidden;
+            width: 30px;
+            height: 32px;
+            padding: 3px 10px;
+            cursor: pointer;
+            font-size: 12px;
+            z-index: 1;
+            text-align: center;
+            line-height: 16px;
+            top: 0;
+            position: absolute;
+
+        }
+        .gotop:hover .content {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="height: 2000px;">页面内容</div>
+    <div class="back hide">
+        <div class="gotop" onclick="GoTop();">
+            <a class="icon"></a>
+            <div class="content">
+                <span>返回顶部</span>
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript" src="/static/bootstrap/js/jquery.min.js"></script>
+<script type="text/javascript">
+
+    function GoTop(){
+//        返回顶部
+        $(window).scrollTop(0);
+    }
+    $(function () {
+        $(window).scroll(function () {
+            //当滚动滑轮时，执行函数体
+
+            var top = $(window).scrollTop();
+            if(top>0){
+//                显示出返回顶部
+                $('.back').removeClass('hide');
+            }else{
+//                隐藏返回顶部
+                $('.back').addClass('hide');
+            }
+        });
+    });
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+
+
+}
+
+.web-chat{
+    display: block;
+    position: absolute;
+    min-width: 100px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("/static/bootstrap/img/web_chat.jpg") no-repeat center;
+    background-size: cover;
+ }
+
+.chat-box{
+    background-color: aliceblue;
+    max-width: 800px;
+    min-width: 500px;
+    height: 5px;
+    margin-top: 50px;
+    margin-left: 30px;
+
+
+}
+
+.border-shadow{
+    box-shadow: 2px 2px 6px rgba(0,0,0,.7);
+}
+
+.chat-list{
+    height: 510px;
+    padding-left: 0;
+
+}
+
+.send-font{
+    text-shadow: 1px 1px 1px #fff !important;
+    /*color: #ddd;*/
+}
+
+.list-group-item{
+    background: linear-gradient(#fff,#f1f1f1);
+    border-color: #ccc;
+    font-size: 17px;
+    height: 50px;
+    border-top: 1px solid #e3e3e3;
+    line-height: 100%;
+
+}
+
+.wrap{
+    height: 533px;
+}
+
+.user-info{
+    color: whitesmoke;
+    font-size: 15px;
+    /*height: 33px;*/
+}
+
+.user-name{
+    width: 100%;
+    height: 50px;
+    border-radius: 6px 6px 0 0;
+    background: linear-gradient(#555,#222);
+    padding: 10px;
+    text-align: center;
+}
+
+.friend-list{
+    background-color: beige;
+    height: 460px;
+    border-radius: 0 0 7px 6px;
+}
+
+.chat-content{
+    /*background-color: #EEE;*/
+    padding: 0;
+    border-radius: 6px 6px 7px 7px;
+    height: 510px;
+
+}
+.input-text{
+    padding: 0;
+    width: 87.333333%;
+}
+/*.input-text textarea{*/
+    /*border: 0;*/
+    /*background-color: #EEE;*/
+    /*padding: 10px;*/
+    /*margin-left: 7px;*/
+/*}*/
+.input-button{
+    width: 12.666667%;
+    padding: 0;
+}
+.input-button  button{
+    margin-left: 12px;
+    margin-top: 5px;
+}
+.chat-title{
+
+    width: 100%;
+    height: 50px;
+    border-radius: 6px 6px 0 0;
+    background: linear-gradient(#555,#222);
+}
+.chat-title-font{
+    padding: 10px 0;
+    /*background-color: green;*/
+    /*color: whitesmoke;*/
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+.chat-message{
+    height: 417px;
+    /*background-color: #EEE;*/
+    font-size: 15px;
+    background: rgba(0,0,0,.5)!important;
+
+
+}
+.msg-content{
+    display: inline-block;
+    min-height: 16px;
+    max-width: 50%;
+    background: linear-gradient(#cf9,#9c3);
+    border-radius: 5px;
+    padding: 10px 15px;
+    word-break: break-all;
+    box-shadow: 1px 1px 5px #000;
+    line-height: 1.4;
+}
+.msg-content-send{
+    display: inline-block;
+    min-height: 16px;
+    max-width: 50%;
+    background: linear-gradient(#fff,#e1e1e1);
+    border-radius: 5px;
+    padding: 10px 15px;
+    word-break: break-all;
+    box-shadow: 1px 1px 5px #000;
+    line-height: 1.4;
+
+}
+
+.msg-user{
+    color: #ddd;
+}
+.chat-input{
+    background: linear-gradient(#555,#222);
+    height: 45px;
+    margin: 0;
+
+}
+.input-size{
+    height: 493px;
+}
+
+.btn_text{
+    max-width: 100px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer!important;
+    text-shadow: 0 1px 1px #194b7e;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    border: 0;
+}
+
+/*.b-size{*/
+    /*height: 60px;*/
+    /*width: 70px;*/
+    /*margin-top: 20px;*/
+/*}*/
+
+.chat_button{
+    width: 56px;
+    padding: 6px 10px!important;
+    display: block!important;
+    font-size: 14px;
+    vertical-align: middle;
+    border-color: #044062;
+    background: -webkit-linear-gradient(top,#5f9cc5,#396b9e);
+    text-shadow: 0 1px 1px #194b7e;
+    border-radius: 6px 6px 7px 7px;
+}
+
+.chat_textarea{
+    display: block;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height: 32px;
+    resize: none;
+    -webkit-box-flex: 1;
+    margin: 5px 10px 5px 6px;
+    max-height: 80px;
+    overflow: hidden;
+    color: #333;
+    background: #f9f9f9;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,.2);
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    font-size: 16px;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+.msg-item-send{
+    text-align: right;
+    padding: 10px;
+}
+
+.msg-item-recv{
+    text-align: left;
+    padding: 10px;
+}
